@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>问题</title>
+</head>
+<body>
+  <h1>我喜欢数学</h1>
+  <p>1 + 1 = ？</p>
+  <input type="text" id="userInput">
+  <button onclick="checkAnswer()">提交</button>
+  <p id="result"></p>
+<script>
+  var answer = 2;
+  function checkAnswer() {
+  var input = document.getElementById("userInput").value;
+  var box = document.getElementById("result");
+  if (Number(input) == answer)
+  {box.textContent = "难道你是数学天才";} 
+  else {box.textContent = "错了，再试一下";}
+  }
+</script>
+</body>
+</html>
